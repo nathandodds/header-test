@@ -1,11 +1,10 @@
-<header class="main-header business-header">
-	<div class="header-text">
-		<h1 class="header-title">Business Commercial</h1>
+<header class="sub-header subpage">
+	<div class="sub-header-text">
+		<h1 class="sub-header-title">Employment</h1>
 	</div>
 </header>
 
 <a href="<?php echo DIRECTORY;?>home/index">Home</a>
-<a href="<?php echo DIRECTORY;?>home/business__sub">Business Subpage</a>
 
 <ul>
 	<li><a href="<?php echo DIRECTORY;?>home/property__sub">Property Subpage</a></li>
