@@ -4,22 +4,52 @@ class home extends C_Controller
 {
     public function index()
     {
-        /*
-        $data_parse = new Data_parser();
-        die( $data_parse->format( array( array( 'id' => 1, 'name' => 'Foo' ),
-                                         array( 'id' => 2, 'name' => 'Dave' ),
-                                         array( 'id' => 3, 'name' => 'Bar' ) ), '', 'json' ) );
-
-        */
-        
-        
+            
         $this->addTag ('title', 'Home');
-        $this->addTag ( 'meta_keywords', 'Pegisis');
-        $this->addTag ( 'meta_desc', 'Pegisis');
 
         $this->addStyle('layout');
 
         $this->setView('home/index');
+    }
+
+    public function mediation()
+    {
+
+        $this->addTag ('title', 'Mediation');
+
+        $this->addStyle('layout');
+
+        $this->setView('home/mediation');
+    }
+
+     public function employment()
+    {
+
+        $this->addTag ('title', 'Employment');
+
+        $this->addStyle('layout');
+
+        $this->setView('home/employment');
+    }
+
+    public function business()
+    {
+
+        $this->addTag ('title', 'Business');
+
+        $this->addStyle('layout');
+
+        $this->setView('home/business');
+    }
+
+    public function civil()
+    {
+
+        $this->addTag ('title', 'Civil & Personal');
+
+        $this->addStyle('layout');
+
+        $this->setView('home/civil');
     }
     
 }
