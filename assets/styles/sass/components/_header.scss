@@ -1,0 +1,47 @@
+.main-header {
+	background-size: cover;
+	line-height: 400px;
+	height: 400px;
+	text-align: center;
+}
+
+.header-text {
+	background: url("../images/header-text_bg.png") 0 0 no-repeat;
+	display: inline-block;
+	height: 225px;
+	line-height: normal;
+	margin: auto;
+	width: 966px;
+	vertical-align: middle;
+}
+
+.header-title {
+	color: #fff;
+	font-size: 80px;
+	font-family: 'ubuntu';
+	text-transform: uppercase;
+	margin-top: 95px;
+
+	&:before {
+		background: url("../images/gills-logo.png") 0 0 no-repeat;
+		content: '';
+		display: block;
+		height: 56px;
+		left: 50%;
+		margin-left: -152px;
+		position: absolute;
+		top: 117px;
+		width: 304px;
+	}
+}
+
+/*
+
+HEADER BACKGROUNDS
+------------------
+
+*/
+
+.property-header{
+	background: url("../images/property-image.png") center 0 no-repeat;
+}
