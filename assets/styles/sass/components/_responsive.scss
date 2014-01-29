@@ -1,0 +1,173 @@
+.header {
+	background-size: cover;
+	line-height: 195px;
+	height: 195px;
+	text-align: center;
+
+	@include bp(desktop) {
+		height: 372px;
+		line-height: 372px;
+	}
+}
+
+
+.header-text_responsive {
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI3JSIgc3RvcC1jb2xvcj0iI2NjY2NjYyIgc3RvcC1vcGFjaXR5PSIwLjE1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iI2NjY2NjYyIgc3RvcC1vcGFjaXR5PSIwLjE1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2NjY2NjYyIgc3RvcC1vcGFjaXR5PSIwLjciLz4KICAgIDxzdG9wIG9mZnNldD0iNTElIiBzdG9wLWNvbG9yPSIjY2NjY2NjIiBzdG9wLW9wYWNpdHk9IjAuNjgiLz4KICAgIDxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjY2NjY2NjIiBzdG9wLW9wYWNpdHk9IjAuMTUiLz4KICAgIDxzdG9wIG9mZnNldD0iOTUlIiBzdG9wLWNvbG9yPSIjY2NjY2NjIiBzdG9wLW9wYWNpdHk9IjAuMTUiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+	background: -moz-linear-gradient(left,  rgba(204,204,204,0.15) 7%, rgba(204,204,204,0.15) 20%, rgba(204,204,204,0.7) 50%, rgba(204,204,204,0.68) 51%, rgba(204,204,204,0.15) 80%, rgba(204,204,204,0.15) 95%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(7%,rgba(204,204,204,0.15)), color-stop(20%,rgba(204,204,204,0.15)), color-stop(50%,rgba(204,204,204,0.7)), color-stop(51%,rgba(204,204,204,0.68)), color-stop(80%,rgba(204,204,204,0.15)), color-stop(95%,rgba(204,204,204,0.15))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(204,204,204,0.15) 7%,rgba(204,204,204,0.15) 20%,rgba(204,204,204,0.7) 50%,rgba(204,204,204,0.68) 51%,rgba(204,204,204,0.15) 80%,rgba(204,204,204,0.15) 95%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(204,204,204,0.15) 7%,rgba(204,204,204,0.15) 20%,rgba(204,204,204,0.7) 50%,rgba(204,204,204,0.68) 51%,rgba(204,204,204,0.15) 80%,rgba(204,204,204,0.15) 95%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(204,204,204,0.15) 7%,rgba(204,204,204,0.15) 20%,rgba(204,204,204,0.7) 50%,rgba(204,204,204,0.68) 51%,rgba(204,204,204,0.15) 80%,rgba(204,204,204,0.15) 95%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(204,204,204,0.15) 7%,rgba(204,204,204,0.15) 20%,rgba(204,204,204,0.7) 50%,rgba(204,204,204,0.68) 51%,rgba(204,204,204,0.15) 80%,rgba(204,204,204,0.15) 95%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26cccccc', endColorstr='#26cccccc',GradientType=1 ); /* IE6-8 */
+	display: inline-block;
+	line-height: normal;
+	margin: auto;
+	width: 318px;
+	vertical-align: middle;
+
+	@include bp(desktop) {
+		width: 966px;
+		//margin-top: 78px;
+	}
+
+}
+
+.header-title_responsive {
+	color: #fff;
+	font-size: 26px;
+	font-family: 'ubuntu';
+	padding: 0.5em;
+	text-transform: uppercase;
+
+	@include bp(desktop) {
+		font-size: 80px;
+		padding: 0;
+	}
+
+}
+
+
+.header-logo_responsive {
+	background: url("../images/header-logo_mobile.png") 0 0 no-repeat;
+	display: block;
+	height: 26px;
+	margin: 0 auto;
+	margin-top: 1em;
+	width: 124px;
+
+	@include img-replace;
+
+	@include bp(desktop) {
+		background: url("../images/header-logo.png") 0 0 no-repeat;
+		display: block;
+		height: 56px;
+		margin: 0 auto;
+		margin-top: 2em;
+		width: 304px;
+
+		@include img-replace;
+	}
+}
+
+/*
+Header Images
+*/
+
+.divorce-header {
+	background: url("../images/divorce_mobile.jpg") center 0 no-repeat;
+
+	@include bp(desktop) {
+		background: url("../images/divorce-header.png") center 0 no-repeat;
+	}
+}
+
+.family-header {
+	background: url("../images/family_mobile.png") center 0 no-repeat;
+
+	@include bp(desktop) {
+		background: url("../images/family-header.png") center 0 no-repeat;
+	}
+}
+
+.vunerable-header {
+	background: url("../images/vunerable_mobile.png") center 0 no-repeat;
+
+	@include bp(desktop) {
+		background: url("../images/vunerable-header.png") center 0 no-repeat;
+	}
+}
+
+.team-header {
+	background: url("../images/team_mobile.png") center 0 no-repeat;
+
+	@include bp(desktop) {
+		background: url("../images/team-header.png") center 0 no-repeat;
+	}
+}
+
+/*
+
+SUBPAGE STYLING
+----------------
+*/
+
+.header_sub {
+	background: #F4FBFE;
+	background-size: cover;
+	display: block;
+	line-height: 102px;
+	height: 102px;
+	text-align: center;
+
+	@include bp(desktop) {
+		height: 200px;
+		line-height: 200px;
+	}
+}
+
+.header-text_responsive--sub {
+	display: inline-block;
+	line-height: normal;
+	margin: auto;
+	vertical-align: center;
+}
+
+.header-title_responsive--sub {
+	color: #00A7B8;
+	font-size: 20px;
+	font-family: 'ubuntu';
+	text-transform: uppercase;
+
+	@include bp(desktop) {
+		font-size: 40px;
+	}
+}
+
+.header-subtext_sub {
+	color: #00A7B8;
+	font-size: 14px;
+	margin: 0;
+	margin-top: 5px;
+	text-transform: uppercase;
+
+	@include bp(desktop) {
+		font-size: 24px;
+	}
+}
+
+.header-logo_responsive--sub {
+	background: url("../images/giles-logo_sub-mobile.png") 0 0 no-repeat;
+	display: block;
+	height: 18px;
+	margin: 0 auto;
+	margin-top: 1em;
+	width: 85px;
+
+	@include img-replace;
+
+	@include bp(desktop) {
+		margin-bottom: 11px;
+	}
+}
