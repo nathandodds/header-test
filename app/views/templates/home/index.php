@@ -1,5 +1,6 @@
 <header class="main-header property-header">
 	<div class="header-text">
+		<p class="header-logo">Giles Wilson</p>
 		<h1 class="header-title">Property Solicitors</h1>
 	</div>
 </header>

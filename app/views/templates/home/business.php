@@ -1,5 +1,6 @@
 <header class="main-header business-header">
 	<div class="header-text">
+		<p class="header-logo">Giles Wilson</p>
 		<h1 class="header-title">Business Commercial</h1>
 	</div>
 </header>

@@ -5,6 +5,10 @@ STRUCTURE
 
 */
 
+//Fonts
+
+@import "fonts/fonts";
+
 // Config settings and variables
 @import "config/settings";
 @import "config/variables";
@@ -24,20 +28,16 @@ STRUCTURE
 // Components
 @import "components/header";
 
-
 // Framework
 @import "framework/grid";
 
-//Fonts
-
-@imports "fonts/fonts";
 
 * {
 	@include box-sizing(border-box);
 }
 
 body {
-	font: #{($base-font-size / 16px) * 1em} / #{$line-height-ratio} $base-font-family;
+	font: #{($base-font-size / 16px) * 1em} / #{$line-height-ratio} 'ubuntu';
 	margin: 0;
 
 	-webkit-text-size-adjust: none; // stops the text from becoming bigger on orientation on iPhone / iPad devices

@@ -1,5 +1,6 @@
 <header class="main-header mediation-header">
 	<div class="header-text">
+		<p class="header-logo">Giles Wilson</p>
 		<h1 class="header-title">Mediation</h1>
 	</div>
 </header>

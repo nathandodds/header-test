@@ -1,5 +1,6 @@
 <header class="sub-header subpage">
 	<div class="sub-header-text">
+		<p class="sub-header__logo">Giles Wilson</p>
 		<h1 class="sub-header-title">Employment</h1>
 	</div>
 </header>

@@ -1,6 +1,7 @@
 
 <header class="main-header civil-header">
 	<div class="header-text">
+		<p class="header-logo">Giles Wilson</p>
 		<h1 class="header-title">Civil &amp; Personal</h1>
 	</div>
 </header>
