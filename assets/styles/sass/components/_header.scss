@@ -3,16 +3,19 @@
 MAIN HEADERS
 ------------
 
-notes
+These are the non responsive headers.
+
+<header class="main-header property-header">
+	<div class="header-text">
+		<p class="header-logo">Giles Wilson</p>
+		<h1 class="header-title">Property Solicitors</h1>
+	</div>
+</header>
+
+<a href="<?php echo DIRECTORY;?>home/property__sub">Property Subpage</a>
 
 */
 
-/*
-
-SUBPAGE HEADERS
----------------
-
-*/
 
 .main-header {
 	background-size: cover;
@@ -21,11 +24,6 @@ SUBPAGE HEADERS
 	text-align: center;
 }
 
-.sub-header {
-	line-height: 166px;
-	height: 166px;
-	text-align: center;
-}
 
 .header-text {
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -45,12 +43,6 @@ SUBPAGE HEADERS
 	vertical-align: middle;
 }
 
-.sub-header-text {
-	display: inline-block;
-	line-height: normal;
-	margin: auto;
-	vertical-align: middle;
-}
 
 .header-title {
 	color: #fff;
@@ -73,6 +65,38 @@ SUBPAGE HEADERS
 	@include img-replace;
 }
 
+
+/*
+
+SUBPAGE HEADERS
+
+These are the non-responsive subpages.
+
+<header class="sub-header subpage">
+	<div class="sub-header-text">
+		<p class="sub-header__logo">Giles Wilson</p>
+		<h1 class="sub-header-title">Civil &amp; Personal</h1>
+	</div>
+</header>
+
+<a href="<?php echo DIRECTORY;?>home/index">Home</a>
+
+
+*/
+
+.sub-header {
+	line-height: 166px;
+	height: 166px;
+	text-align: center;
+}
+
+.sub-header-text {
+	display: inline-block;
+	line-height: normal;
+	margin: auto;
+	vertical-align: middle;
+}
+
 .sub-header__logo {
 	background: url("../images/gills-logo_sub.png") 0 0 no-repeat;
 	display: block;
@@ -90,6 +114,7 @@ SUBPAGE HEADERS
 	text-transform: uppercase;
 
 }
+
 
 /*
 

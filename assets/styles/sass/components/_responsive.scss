@@ -1,5 +1,33 @@
+/*
+RESPONSIVE HEADERS
+--------------------
+
+These headers are responsive.
+
+
+<header class="header family-header">
+	<div class="header-text_responsive">
+		<p class="header-logo_responsive">Giles Wilson</p>
+		<h1 class="header-title_responsive">Family Law</h1>
+	</div>
+</header>
+
+<a href="<?php echo DIRECTORY;?>home/index">Home</a>
+<a href="<?php echo DIRECTORY;?>responsive/family_sub">Family Subpage</a>
+
+*/
+
+/*
+
+Header Text styling.
+
+<div class="header-text_responsive">
+	<p class="header-logo_responsive">Giles Wilson</p>
+	<h1 class="header-title_responsive">Family Law</h1>
+/div>
+
+*/
 .header {
-	background-size: cover;
 	line-height: 195px;
 	height: 195px;
 	text-align: center;
@@ -77,6 +105,7 @@ Header Images
 
 .divorce-header {
 	background: url("../images/divorce_mobile.jpg") center 0 no-repeat;
+	background-size: cover;
 
 	@include bp(desktop) {
 		background: url("../images/divorce-header.png") center 0 no-repeat;
@@ -111,6 +140,17 @@ Header Images
 
 SUBPAGE STYLING
 ----------------
+
+This is the responsive subpage styling.
+
+<header class="sub-header subpage">
+	<div class="sub-header-text">
+		<p class="sub-header__logo">Giles Wilson</p>
+		<h1 class="sub-header-title">Mediation</h1>
+	</div>
+</header>
+
+<a href="<?php echo DIRECTORY;?>home/index">Home</a>
 */
 
 .header_sub {
@@ -122,16 +162,27 @@ SUBPAGE STYLING
 	text-align: center;
 
 	@include bp(desktop) {
+		background: url("../images/subpage-header.png") center 0 repeat;
 		height: 200px;
 		line-height: 200px;
 	}
 }
 
+/*
+HEADER TEXT STYLING
+--------------------
+
+<div class="sub-header-text">
+	<p class="sub-header__logo">Giles Wilson</p>
+	<h1 class="sub-header-title">Mediation</h1>
+</div>
+
+*/
+
 .header-text_responsive--sub {
 	display: inline-block;
 	line-height: normal;
-	margin: auto;
-	vertical-align: center;
+	vertical-align: middle;
 }
 
 .header-title_responsive--sub {
@@ -141,9 +192,19 @@ SUBPAGE STYLING
 	text-transform: uppercase;
 
 	@include bp(desktop) {
+		color: #fff;
 		font-size: 40px;
+		padding: 0;
 	}
 }
+
+/*
+SUBTEXT
+--------
+This is the subtitle in the header.
+
+<h1 class="sub-header-title">Mediation</h1>
+*/
 
 .header-subtext_sub {
 	color: #00A7B8;
@@ -153,7 +214,9 @@ SUBPAGE STYLING
 	text-transform: uppercase;
 
 	@include bp(desktop) {
+		color: #fff;
 		font-size: 24px;
+		margin-top: 0;
 	}
 }
 
@@ -168,6 +231,12 @@ SUBPAGE STYLING
 	@include img-replace;
 
 	@include bp(desktop) {
-		margin-bottom: 11px;
+		background: url("../images/gills-logo_sub.png") 0 0 no-repeat;
+		display: block;
+		height: 33px;
+		margin: 0 auto 7px;
+		width: 164px;
+
+		@include img-replace;
 	}
 }
